@@ -1,0 +1,57 @@
+table {
+  width: 800px;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: center;
+  border-bottom: 1px solid black;
+  border: 2px solid black;
+}
+
+th:hover {
+  background: gray;
+}
+
+th.ascending::after {
+  content: "\25B2";
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+th.descending::after {
+  content: "\25BC";
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
+td {
+  text-align: center;
+  border: 2px solid black;
+}
+
+button.delete {
+  text-align: center;
+  color: white;
+  background-color: firebrick;
+}
+
+h1 {
+  text-align: left;
+  vertical-align: middle;
+}
+
+img.image {
+  float: right;
+  vertical-align: middle;
+  text-align: right;
+}
+
+div.header {
+  display: inline-block;
+}
+
+#datatable {
+  height: 85vh;
+  overflow: scroll;
+}
